@@ -1,7 +1,6 @@
 {
     "full_name": "Carson Pan",
     "email": "qweasdzxcpkh@gmail.com",
-    "github_username": "qweasdzxcpkh",
     "project_name": "Chromium Extension React Boilerplate",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "project_description": "A chromium extension to popup a counter window."

@@ -16,6 +16,7 @@
 ```bash
 cookiecutter https://github.com/qweasdzxcpkh/cookiecutter-browser-extension --directory="react"
 ```
+> if the `cookiecutter` command not found, maybe you need to use: `python3 -m cookiecutter`
 
 3. open your directory and install(react sample)
 
@@ -38,3 +39,7 @@ npm install
 1. where is the manifest file?
 
 A: Modify `public/manifest.json` and run build, will copy to dist/ directory. So was icon file etc.
+
+## TODO
+
+1. VUE version
