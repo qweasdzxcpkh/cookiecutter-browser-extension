@@ -1,8 +1,9 @@
-# boileplate of develop of chromium extensions
+# boilerplate of develop of chromium extensions
 
 ## required:
 
 - node >= 16
+- typescript
 
 ## usage
 
@@ -13,7 +14,27 @@
 2. use cookitcutter generate project
 
 ```bash
-cookiecutter https://github.com/qweasdzxcpkh/cookiecutter-browser-extension
+cookiecutter https://github.com/qweasdzxcpkh/cookiecutter-browser-extension --directory="react"
 ```
 
-3. start your work
+3. open your directory and install(react sample)
+
+```bash
+cd {{ cookiecutter.project_slug }}
+npm install
+```
+
+4. start your work
+
+5. build your extension
+
+`npm build`
+> extension build directory is default at dist/
+
+6. load your extension at chrome://extensions
+
+## Q&A
+
+1. where is the manifest file?
+
+A: Modify `public/manifest.json` and run build, will copy to dist/ directory. So was icon file etc.

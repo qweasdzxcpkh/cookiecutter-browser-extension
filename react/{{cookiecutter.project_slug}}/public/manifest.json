@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "tgit-octotree",
-  "description": "octotree in tgit",
+  "name": "{{ cookiecutter.project_slug }}",
+  "description": "{{ cookiecutter.project_description }}",
   "version": "1.0",
   "icons": {
     "16": "images/icon-16.png",
@@ -15,12 +15,7 @@
       "32": "images/icon-32.png",
       "48": "images/icon-48.png",
       "128": "images/icon-128.png"
-    }
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["./tgit-octotree.js"]
-    }
-  ]
+    },
+    "default_popup": "index.html"
+  }
 }
